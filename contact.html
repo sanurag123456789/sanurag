@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contact</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="logos/Screenshot (5).png">
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Portfolio.html">Portfolio</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="contact">
+        <section class="contact-row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-sharp fa-solid fa-paper-plane"></i> sanuraggogineni@gmail.com</p>
+                <p><i class="fa-sharp fa-solid fa-square-phone"></i> 9686878143</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-discord"></i></a></a>
+                </div>
+            </div>
+            <div class="contact-right">
+
+                <form id="contactform">
+                    <br><br><input id="nameField" type="text" name="name" placeholder="Your name" required>
+                    <br><br><input id="emailField" type="email" name="email" placeholder="Your email" required>
+                    <br><br><Textarea id="msgField" name="message" rows="10" placeholder="Your message"></Textarea>
+                    <button type="submit">submit</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="copyright">
+        <p>Copyright &copy; Sanurag. Made with <i class="fa-solid fa-heart"></i> by Orchids International School</p>
+    </footer>
+    <script src="main.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-database.js"></script>
+    <script>
+
+        var firebaseConfig = {
+            apiKey: "AIzaSyCziGb1XL0OxPydvMiFKsYZVNPENUmB0hc",
+            authDomain: "myproject-140f0.firebaseapp.com",
+            databaseURL: "https://myproject-7ac29-default-rtdb.firebaseio.com/",
+            projectId: "myproject-140f0",
+            storageBucket: "myproject-140f0.appspot.com",
+            messagingSenderId: "733117403685",
+            appId: "1:733117403685:web:2a79b88e063da5727ca5cc",
+            measurementId: "G-5J7J5RL5WK"
+        };
+        firebase.initializeApp(firebaseConfig);
+    </script>
+</body>
+</html>
